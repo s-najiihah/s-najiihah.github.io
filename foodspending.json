@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Overview of Food Spending in the UK",
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/foodspending.csv"
+  },
+  "mark": {"type": "line"},
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Spending",
+    "subtitle": [
+      "Spending on Bread and Cereals, Meat, Fish, Fruit and Sugar & Confectionery",
+      "Source: ONS",
+      ""
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {"labelExpr": "'£' + datum.label + 'M'"},
+      "title": ""
+    },
+    "color": {
+      "field": "series",
+      "legend": {"title": "", "orient": "top"},
+      "type": "nominal"
+    }
+  },
+  "config": {}
+}
