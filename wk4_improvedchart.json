@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": {"left": 10},
+  "width": 450,
+  "height": 300,
+  "title": {
+    "text": "Numbers of Foreign Helpers in Hong Kong",
+    "subtitle": ["Female helpers between 2008-2017, source: SCMP", ""],
+    "padding": {"bottom": 10},
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": ""
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk4_foreignhelpers_hk.csv",
+      "format": {"type": "csv", "parse": {"year": "date"}, "delimiter": ","},
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["year"],
+          "field": "value",
+          "sort": {"field": ["worker"], "order": ["descending"]},
+          "as": ["value_start", "value_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "(isDate(datum[\"year\"]) || (isValid(datum[\"year\"]) && isFinite(+datum[\"year\"]))) && isValid(datum[\"value\"]) && isFinite(+datum[\"value\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "rect",
+      "clip": true,
+      "style": ["bar"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "worker"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Year: \" + (timeFormat(datum[\"year\"], '%b %d, %Y')) + \"; Number of Workers, : \" + (format(datum[\"value\"], \"\")) + \"; Worker:: \" + (isValid(datum[\"worker\"]) ? datum[\"worker\"] : \"\"+datum[\"worker\"])"
+          },
+          "xc": {"scale": "x", "field": "year"},
+          "width": {"value": 20},
+          "y": {"scale": "y", "field": "value_end"},
+          "y2": {"scale": "y", "field": "value_start"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "time",
+      "domain": {"data": "source_0", "field": "year"},
+      "range": [0, {"signal": "width"}],
+      "padding": 5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [0, 400000],
+      "range": [{"signal": "height"}, 0],
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Indonesian", "Filipino", "Others"],
+      "range": ["#022461", "#8594cb", "#fcc01e"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Year",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": ["Number of Workers", ""],
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "orient": "top",
+      "title": "Worker:",
+      "fill": "color",
+      "direction": "horizontal",
+      "symbolType": "square"
+    }
+  ],
+  "config": {}
+}
