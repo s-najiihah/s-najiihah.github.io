@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk3_capital_jpn.csv"
+  },
+  "title": {
+    "text": "Japan's Capital Stock at Current PPP",
+    "subtitle": ["Source: FRED"]
+  },
+  "width": 450,
+  "height": 200,
+  "mark": {"type": "line", "color": "dodgerblue"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "Year"},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Capital Stock (Million USD)"
+    }
+  }
+}

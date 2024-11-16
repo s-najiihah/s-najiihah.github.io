@@ -80,14 +80,14 @@
 
     <section>
         <div class="chart-description">
-            <h2>CC2: An imported chart</h2>
+            <h2>CC2: Creating my own visualisations</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+               I create this chart using Economics Observatory's "create tool"
             </p>
         </div>
-        <figure id="#Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
+
 
     <section>
         <div class="chart-description">
@@ -107,17 +107,75 @@
                Two charts supporting or refuting a topic discussed at the Festival of Economics.
             </p>
         </div>
-        <figure id="week4_mfp"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2></h2>
+            <p> Capital stock Japan
+            </p>
+        </div>
+        <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
     <section>
         <div class="chart-description">
             <h2>CC4: Improving a chart</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-               Two charts supporting or refuting a topic discussed at the Festival of Economics.
+               This is a chart from the South China Morning Post on the number of domestic helps in Hong Kong.
+            </p>
+            <p><img src="wk4_foreignhelpers_hk.png" alt="A description of the photo" width="500" height="300"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                To improve this chart, I used the data points to create my own CSV file and turned the chart into a stacked bar chart. I also used an online colour finder to find the colour codes for SCMP's graphics and replicate it in my chart.
             </p>
         </div>
-        <figure id="week4_mfp"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC5: Scraper</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+               Chart
+            </p>
+        </div>
+        <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC6: Loops and building a dashboard</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+               Chart
+            </p>
+    
+        </div>
+        <figure id="Location9"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC7: Maps: Base maps and choropleths</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+               Chart
+            </p>
+        </div>
+        <figure id="Location10"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+               Chart
+            </p>
+        </div>
+        <figure id="Location11"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -131,18 +189,27 @@
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
         let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        
         let figure_2_spec = "wk1_chart2.json"                                                                                                   
+        let figure_3_spec = "wk2_vietnam_unemployment.json"                                                                                                   
+        let figure_4_spec = "week2_foodspending.json"   
+        let figure_5_spec = "wk3_tfp_jpn.json"
+        let figure_6_spec = "wk3_capital_jpn.json"
+        let figure_7_spec = "wk4_improvedchart.json"
+        let figure_10_spec = "wk7_chart1.json"
+        let figure_11_spec = "wk7_chart2.json"
+
+
+        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1                                                                                                
         vegaEmbed('#Location2', figure_2_spec) 
-        
-        let figure_3_spec = "wk2_vietnamunemployment.json"                                                                                                   
         vegaEmbed('#Location3', figure_3_spec)
-        vegaEmbed ("#Location4", "week2_foodspending.json")
-       
-    
+        vegaEmbed ('#Location4', figure_4_spec)
+        vegaEmbed ('#Location5', figure_5_spec)
+        vegaEmbed ('#Location6', figure_6_spec)
+        vegaEmbed ('#Location7', figure_7_spec)
+        vegaEmbed ('#Location10', figure_10_spec)
+        vegaEmbed ('#Location11', figure_11_spec)
+
+
 
         
         // Do you want to add more graphs?

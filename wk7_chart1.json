@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "title": {"text": "Mexican states and their capitals"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/strotgen/mexico-leaflet/refs/heads/master/states.geojson",
+        "format": {"property": "features"}
+      },
+      "encoding": {
+        "tooltip": [{"field": "properties.state_name", "title": "State name"}]
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "beige",
+        "opacity": 0.5,
+        "stroke": "black",
+        "strokewidth": 0.3
+      }
+    }
+  ],
+  "config": {}
+}

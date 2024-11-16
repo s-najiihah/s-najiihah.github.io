@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "title": {"text": "Mexican states and their capitals"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk7_mx_states.geojson"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "beige",
+        "opacity": 0.5,
+        "stroke": "black",
+        "strokewidth": 0.3
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk7_mx.csv"
+      },
+      "transform": [{"filter": "datum.population > 100000 "}],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "color": {"field": "admin_name", "type": "nominal"},
+        "tooltip": [
+          {"field": "admin_name", "title": "state"},
+          {"field": "city"},
+          {"field": "population"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
