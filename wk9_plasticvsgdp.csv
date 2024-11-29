@@ -1,4 +1,4 @@
-Entity,Code,Year,Per capita plastic waste (kg/person/day),"GDP per capita, PPP (constant 2017 international $)",Population (historical),World regions according to OWID,time,time,time,time
+Entity,Code,Year,plastic,GDP, PPP (constant 2017 international $)",Population (historical),World regions according to OWID,time,time,time,time
 Albania,ALB,2010,0.069,10749.519,2928730,Europe,2010,2023,2010,2010
 Algeria,DZA,2010,0.144,11007.747,36188236,Africa,2010,2023,2010,2010
 Angola,AGO,2010,0.062,7689.821,23294821,Africa,2010,2023,2010,2010
