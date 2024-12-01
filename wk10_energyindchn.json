@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Energy use in China",
+    "subtitle": "Energy use per person between 1965 and 2023, Source: Our World in Data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk9_energyindchn.csv",
+    "format": {"type": "csv", "property": "years"}
+  },
+  "mark": {"type": "line", "color": "#00BFFF", "strokeWidth": 2, "opacity": 1},
+  "transform": [
+    {"calculate": "year(datum.Year)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"},
+    {"calculate": "datum.ECPC", "as": "value"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1965,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2023,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2023,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "ECPC",
+      "type": "quantitative",
+      "title": "kWh",
+      "axis": {"grid": false}
+    }
+  }
+}

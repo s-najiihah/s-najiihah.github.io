@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk_5_ADB_countries_largestcontribution%20.csv"
+  },
+  "title": {
+    "text": "Countries with the largest voting power in the Asian Development Bank"
+  },
+  "transform": [{"fold": ["Voting_power"], "as": ["measure", "value"]}],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "value", "type": "quantitative"},
+    "y": {"field": "Country", "type": "nominal", "sort": "-x"},
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "condition": [
+        {
+          "test": "datum['Country'] === 'All Remaining Members'",
+          "value": "turquoise"
+        }
+      ]
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "value", "type": "nominal", "title": "Voting power"}
+    ]
+  }
+}

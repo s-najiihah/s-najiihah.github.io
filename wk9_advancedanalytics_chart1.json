@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Plastic waste emitted per capita vs GDP per capita in 2010",
+    "subtitle": [
+      "GDP per capita (x), Plastic percapita (y). 2010 data",
+      "Size of Population",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/temp.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "circle", "opacity": 0.7},
+  "height": 300,
+  "width": 400,
+  "encoding": {
+    "x": {
+      "field": "gdp_percapita",
+      "type": "quantitative",
+      "scale": {"domain": [0, 120000]},
+      "axis": {"grid": false},
+      "title": "GDP per capita"
+    },
+    "y": {
+      "field": "plastic_percapita",
+      "type": "quantitative",
+      "scale": {"domain": [0, 0.8]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "size": {
+      "field": "pop",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {"type": "log", "domain": [10000, 1400000000]},
+      "legend": null
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "legend": {"title": "Region"},
+      "scale": {"scheme": "category20"}
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal", "title": "Country"},
+      {
+        "field": "gdp_percapita",
+        "type": "quantitative",
+        "title": "GDP per Capita",
+        "format": ".0f"
+      },
+      {
+        "field": "plastic_percapita",
+        "type": "quantitative",
+        "title": "Plastic Waste Per Capita",
+        "format": ".2f"
+      },
+      {
+        "field": "pop",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  }
+}
