@@ -1,5 +1,4 @@
-Entity,Code,Year,Share of waste recycled from total regional waste,Share of waste incinerated from total regional waste,Share of littered and mismanaged from total regional waste,Share of waste landfilled from total regional waste
-Americas (excl. USA),,2000,4.721963,1.2200574,32.702644,61.355328
+Entity,Code,Year,share_recycled,share_incinerated,share_littered_mismanaged,share_landfill
 Americas (excl. USA),,2001,4.9725046,1.2086724,32.65127,61.167557
 Americas (excl. USA),,2002,5.22747,1.1975662,32.610558,60.96441
 Americas (excl. USA),,2003,5.4825106,1.186352,32.54644,60.7847
