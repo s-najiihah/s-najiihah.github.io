@@ -1,0 +1,3554 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-e8a5e558fef4d3ab70d5a6861792f6c2"},
+  "mark": "line",
+  "encoding": {
+    "color": {"field": "labels", "title": "", "type": "nominal"},
+    "tooltip": [
+      {"field": "quote_date", "title": "Date", "type": "temporal"},
+      {
+        "field": "price",
+        "format": ".2f",
+        "title": "Price (£)",
+        "type": "quantitative"
+      },
+      {"field": "labels", "title": "Cheese Type (Per Kg)", "type": "nominal"}
+    ],
+    "x": {"field": "quote_date", "title": "", "type": "temporal"},
+    "y": {"field": "price", "title": "", "type": "quantitative"}
+  },
+  "title": {"text": "Price of different cheeses over time"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-e8a5e558fef4d3ab70d5a6861792f6c2": [
+      {
+        "quote_date": "2004-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.734695639130434,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.67195309921875,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.592926808130081,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.619504119008265,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.630583329999999,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.6199999876923075,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.589370063779527,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.675546202521008,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.634435447580645,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.696141686614173,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2004-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.698461497692307,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.7327199576000005,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.858487350420168,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.868387045967742,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.885564474193549,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.481013466216216,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.800238042857143,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.764838662096774,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.92945314453125,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.011395351162791,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.9844531265625,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.027716524409449,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2005-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.023461525384615,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.022706752631579,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.84805967761194,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.811935445967742,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.81192305,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.752440911811024,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.74367184296875,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.805196825984252,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.819847295419847,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.816825370634921,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.835648822137405,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.755620408759124,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2006-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.755864629323308,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.81054683671875,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.810887062903226,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.739847321374046,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.786296258518519,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.755223846268657,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.637063472222223,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.7710937140625,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.831374015267175,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 5.999393945454545,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.226311481147541,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.351779671186441,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2007-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.595038134351145,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.864262270491803,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.936666632432432,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.830322575,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.729920634920635,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.866384559230769,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.118120254887218,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.035530268181819,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.094122105343511,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.181538466153847,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.167769219230769,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.176147519672131,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2008-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.201492509701493,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.195522363432836,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.2103149811023615,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.26744184767442,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.086940305970149,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.281199968,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.193333331818181,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.50285712244898,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.283307698461538,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.26285712,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.259632352205882,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.853431349019605,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.2097777762962965,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.471999987826088,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.203759406015037,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.506923054700856,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.206444448888889,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.679830491525426,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.0425954183206105,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.70413795172414,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.0465413744360905,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.657130433043477,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2009-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.900808819852942,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2009-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.47301727758621,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.135671618656716,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.58591669333333,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.987704926229508,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.61972227777778,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.07828126953125,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.157118745762713,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.1075781234375,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.48016406557377,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.2230400496,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.3333621637931,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.218560621969697,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.771500091666667,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.287230811538461,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.90596646218487,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.194222277777778,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.92242996261682,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.339548926315789,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.466637203539822,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.264347876086957,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.347256902654866,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.2975000316176475,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.224649228070177,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2010-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.375333337037037,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2010-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.082631657894737,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.340225631578948,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.319545563636364,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.207952825984252,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.545961615384616,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.101555637037037,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.385932262711865,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.146296382222222,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.679473789473683,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.994666768148148,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.55153858119658,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.100507278260869,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.84079642477876,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.0887200112,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.3088136779661,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.254328344776119,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.53647070588235,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.282748073282443,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.784117789915967,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.237426447058824,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.443884454545454,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.274651151162791,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.804320167999997,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2011-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.24296873203125,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2011-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.396935629032257,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.253308243609023,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.384094661417322,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.210564510483871,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.443675393162394,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.063349374641149,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.18546872578125,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.25113653030303,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.176036094594595,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.220220580147059,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.175590677165356,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.352321402678571,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.1319403171641795,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.22141740944882,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.275246613452914,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.250845090140846,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.282325674418605,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.487565216086956,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.294671546715329,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.34888008,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.404669615418502,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.220814834814815,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.620465178294573,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.172467520779222,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.217969924060151,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.728818952755905,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.162850837280702,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.1800729956204385,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.128333403508773,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.12649997090909,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.150882365441176,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.14191312173913,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.110871527064221,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2012-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.117293248120301,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2012-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.022460388888888,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2012-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.10771682739726,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.152518545185186,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.78944885826772,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.037264575336323,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.265000007936508,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.6171094453125,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.461843588268158,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.450325191056911,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.696259610687022,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.449067392746114,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.317154476422765,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.720155054263564,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.355948734871795,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.1991666525,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.774491533898303,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.201590942045454,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.303129728244275,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.683813576271184,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.106284438073395,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.424701464179105,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.328448284482757,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 7.923538530256411,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.593308848529412,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.144956626086955,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.59049182568306,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.760666702222222,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.538503976377953,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.646267980382776,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.65521742826087,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.561111031746034,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.436051311794872,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.725185208888888,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.55811478688525,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.020990125742575,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2013-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.494071454285714,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2013-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.693278713114754,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2013-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.312511264573992,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.704405623076924,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.932258112903227,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.303047696666667,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.707664238686131,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.255042058823527,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.104687574107142,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.645611525179856,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.881904753968254,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.107200078222224,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.618582118656716,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.053228275590552,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.94379488,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.810447777611941,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.939612317829457,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.544753391928252,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.880791385611511,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 24.011550333333336,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.64036867235023,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.814379576642335,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.102283417322834,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.987722823267326,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.795955897794118,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.36351141221374,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.9073000535,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.84789475037594,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.18629027419355,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.062641547169811,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.737132881118882,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.065905496062992,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.652163450961538,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.728226957446808,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.78672268067227,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.765539206862746,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2014-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.65431655323741,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2014-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.61778624427481,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2014-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.7621466,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.902535216197183,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.7849218515625,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.054454555454544,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.793571417857144,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.57188523770492,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.816944461574074,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.847536222463767,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.37475793548387,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.080884969911505,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.808732390140844,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.115454356060607,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.921091673362445,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.750419574825175,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 23.113656529850747,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.903839258035715,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.662198570921986,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.712575575757576,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.595669631696428,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.6037588546099295,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.57255620300752,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.121313580508474,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.479930557638888,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.56686112408759,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.609181053879311,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.568880582089553,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.612556210526314,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.519192852466368,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.362627728467153,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.402769,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.592555086784142,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.271654671223022,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.964838564516132,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.476233209865471,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2015-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.387021285106383,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2015-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.079999885496182,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2015-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.384035921076233,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.236849310958903,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.055908984848486,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.958867991981132,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.4054961870229015,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.77768647761194,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.57004791818182,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.241914885106382,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.46118508148148,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.86591309521739,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.361575346575342,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.76330923741007,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.556968343891402,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.257323942957747,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.40078004255319,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.749148945531916,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.370942036956522,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.467226182481753,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.45675676846847,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.203617016312057,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.738823419117647,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.568847976958525,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.268633105035971,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.797925822222222,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.823013712785388,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.0790070985815605,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.567357035714284,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.576651397247707,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.042027031756756,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.61926995620438,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.181914918723404,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.0991781000000005,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.107443511278195,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.401363661818182,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2016-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.143802842253521,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2016-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.413515484375,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2016-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.522038879126214,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.112916693055556,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.227121068181816,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.988136412727274,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.12362965037037,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.58992296846154,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.764663549038461,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.353138702189781,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.75065682481752,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.005753501826485,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.410567392907801,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.51602826241135,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.816486545045045,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.379485308823529,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.61205870588235,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.714463568669528,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.24092199929078,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.355075651515154,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.66210306051502,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.550344871724138,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.282698325396822,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.885550740969164,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.538111933566434,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.14552230597015,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.888706950000001,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.6525175356643365,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.065338255639098,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.099217442173913,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.687042280985916,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.062073985185187,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.702787601769911,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.65751775106383,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.968636287878788,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.607432456306306,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2017-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.6983688163120565,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2017-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.244962866666665,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2017-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.39951326460177,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.64776980791367,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.278308727941177,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.067892393721973,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.6690225578947375,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.325984742424243,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.842995406451614,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.732733807194244,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.31323297744361,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.883480222026432,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.777342658041958,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.575539460431653,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.10740262164502,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.791172418620689,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.555766328467154,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.859224122413794,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.769370633566433,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.265072369565218,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.87607141607143,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.746590921969697,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.386014398550724,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.984629606481482,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.666742468181819,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.456277328467152,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.87331801843318,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.625620472262773,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.415140809859153,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.974093036744186,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.598819479861111,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.743928542857144,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.974732157142856,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.532765990070922,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.60195802097902,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.686444441777779,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2018-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.595522421641791,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2018-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.456595723404256,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2018-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.874158844392523,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.512553207092198,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.61668960689655,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.030829246829269,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.46201440647482,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.556186999999998,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.953415836633663,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.458251765734265,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.457272678321676,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.189818173636363,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.440684955479452,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.681843929078013,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.90174670349345,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.464657556849315,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.832755850393703,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.725793968669528,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.4613103668965515,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.785891434108528,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.62631816,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.394000017777778,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.11713273986014,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.768073383944955,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.429558839705883,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.950428442857145,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.913073587878788,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.426071447142858,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.0145713,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.854094819396552,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.400422557746478,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.134725902739728,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.51316238076923,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.4215493281690135,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.98842845714286,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.54731277048458,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2019-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.446831011267605,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2019-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.11496392086331,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2019-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.526622206666666,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.434822718439717,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.945373014925373,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.910448417488789,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.362463776086957,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.044108472868217,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.674594573873874,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.44341086124031,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.80047612698413,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.286794220095695,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.516714295714286,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.721249925000002,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.42745451090909,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.5334042914893615,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.02989578125,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.678681304945055,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.5056881,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.78083327777778,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.137604138541667,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.94375002890625,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.665135081081083,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.301224459693877,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.38865083015873,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.41091596946565,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.503755635294118,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.37000003046875,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.431278210526315,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.497720909767441,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.2503077284615385,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.58856062121212,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.498116586098655,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.970804690804598,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.26920459090909,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.078850551724138,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2020-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.896516949438202,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2020-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.211022772727272,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2020-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.482701118965517,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.805210182352941,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 18.945555583333334,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.718265288265306,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.7499167416666666,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.29866064285714,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.72708735631068,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.966740800740741,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.448879944,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.605167442583733,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.958467213868613,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.5429686875,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.663286375117371,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.01000001559633,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.92211765882353,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.000546435519125,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.841929835964913,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.371399996,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.4922499755,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.924347845652174,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.404838712903228,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.247999984,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.889051108759124,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.543015874603174,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.637379913100435,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.945704243661972,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.449618338931298,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.689537022222222,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.976690156338028,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.634586484210526,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.548194433333334,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.846344846206897,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 19.998257503030302,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.294753356053812,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2021-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.88243058125,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2021-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.247851783703705,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2021-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.923962241981132,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 6.985136991780822,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.19875905547445,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.946306284684685,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.03110295,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.35305336335878,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 8.781767406511628,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.088194450694444,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.516739049275362,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.01614032236842,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.325586237931034,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.550507179710145,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.040301719396552,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.541048978321679,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.480496473758866,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.221702128510639,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.678226936170214,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.298071434285717,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.364608692608694,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 7.932898556521739,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.535248225531916,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 9.808977774222221,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 8.35705885367647,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.902919693430658,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 10.32215243721973,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 8.734924290151515,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.226090210526316,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 10.496860940358744,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 8.897500051470589,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.676102880882354,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.076108566515837,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.279124125547446,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.011923106153848,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.326804085051545,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2022-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.531366930935253,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2022-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.04894742105263,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2022-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.285207366820277,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.731773079432624,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.184275420289854,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.234178400938967,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.025488713533834,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.082539769841272,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.726119368159205,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.997500005882353,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.08742433333333,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.833282774747476,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.075492964084507,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.186428678571428,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.823815767105264,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.151333325185186,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.20130443478261,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.22245609868421,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.30414814148148,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.187647154411763,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.73299537419355,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.285999999285714,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.305211330985916,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.957305907305935,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.142348472727273,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.03661769852941,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.203652131304349,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 10.046934291970803,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 22.450859421875002,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.816902641150442,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-10-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.933533818796992,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-10-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.74175576335878,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-10-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.095324027777778,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-11-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.932238789552239,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-11-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.506969719696972,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-11-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.911981555760368,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2023-12-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.95610685038168,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2023-12-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.005671671641792,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2023-12-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.992173866956522,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-01-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.89088234117647,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-01-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.620225586466166,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-01-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.364545393073593,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-02-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.73939392651515,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-02-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.140078171875,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-02-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.783721914798207,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-03-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.87753621521739,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-03-01T00:00:00",
+        "item_id": 211510,
+        "price": 20.552384753846155,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-03-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.902532125321889,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-04-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.95556389774436,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-04-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.041748279720277,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-04-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.985148874042553,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-05-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.830827063157894,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-05-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.260292,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-05-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.801336142241379,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-06-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.794403006716419,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-06-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.480367669117648,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-06-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.118173851304348,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-07-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.754852963235294,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-07-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.486330956834532,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-07-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.075670964935066,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-08-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.815251821582734,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-08-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.674545468531466,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-08-01T00:00:00",
+        "item_id": 211511,
+        "price": 11.865675617567566,
+        "labels": "Soft Continental Cheese"
+      },
+      {
+        "quote_date": "2024-09-01T00:00:00",
+        "item_id": 211509,
+        "price": 9.880072488405798,
+        "labels": "Hard Regional Cheese"
+      },
+      {
+        "quote_date": "2024-09-01T00:00:00",
+        "item_id": 211510,
+        "price": 21.62398552173913,
+        "labels": "Parmesan Cheese"
+      },
+      {
+        "quote_date": "2024-09-01T00:00:00",
+        "item_id": 211511,
+        "price": 12.325367907792208,
+        "labels": "Soft Continental Cheese"
+      }
+    ]
+  }
+}

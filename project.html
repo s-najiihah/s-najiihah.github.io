@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
+    
+        <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+        <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
+        <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+        <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    
+        <!-- This is a link to the vega-lite which we're using to make graphs -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+        <style>
+            #chartGrid {
+                display: flex;
+            }
+            h1 {text-align: center;}
+
+            
+            
+        </style>
+    </head>
+
+<body>
+
+
+<section>
+    <div class="w3-container"> 
+        <h2>Data Visualisation Project: Exploring waste colonialism</h2>
+        <p> Project aims
+        </p>
+    </div>
+     <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+<section>
+    <div class="chart-description"> 
+        <h2>Overview of plastic waste generation throughout the world</h2>
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Plastic waste generation per capita vs. GDP per capita
+        </p>
+    </div>
+    <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+<section>
+    <div class="chart-description">
+        <h2>Section 2</h2>
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Write second section..
+        </p>
+    </div>
+    <figure id="Location2"></figure>  <figure id="Location22"></figure><!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+<section>
+    <div class="chart-description">
+        <h2>Section 3: </h2>
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+           Map of plastic waste exports over time
+        </p>
+    </div>
+    <figure id="Location22"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+<section>
+    <div class="chart-description">
+        <h2>Section 4: What happens to our waste? A comparise of different regions</h2>
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Analysis
+        </p>
+    </div>
+    <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+
+<script>
+
+        let figure_1_spec = "C1_plasticgen_capita.json"                                                                                                   
+        let figure_2_spec = "C2_plastic_exports_value.json"   
+        let figure_22_spec = "C2_plastic_exports_map.json"  
+        let figure_4_spec = "C4_plasticfate.json"                                                                                                   
+                                                                                                 
+                                                                                                
+      
+
+
+        vegaEmbed('#Location1', figure_1_spec)         
+        vegaEmbed('#Location2', figure_2_spec) 
+        vegaEmbed('#Location22', figure_22_spec)
+        vegaEmbed ('#Location4', figure_4_spec)
+        vegaEmbed ('#Location5', figure_5_spec)
+
+    </script>
+
+</body>
+</html>

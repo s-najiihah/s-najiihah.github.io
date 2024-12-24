@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk4_foreignhelpers_hk.csv"
+  },
+  "width": 550,
+  "height": 300,
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "value", "type": "quantitative"},
+    "color": {"field": "worker", "type": "nominal"}
+  },
+  "layer": [
+    {"mark": {"type": "tick", "thickness": 2, "width": 30}},
+    {
+      "mark": {"type": "text", "angle": 90, "align": "right"},
+      "encoding": {"text": {"field": "value", "type": "quantitative"}}
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/map_world.geojson",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "Share of plastic exports around the world",
+    "subtitle": ["Source: OWID"]
+  },
+  "projection": {"type": "naturalEarth1"},
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/project/C2_map_exports.csv"
+        },
+        "key": "ISO3",
+        "fields": ["Country", "value", "year"]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 1995,
+      "bind": {
+        "input": "range",
+        "min": 1995,
+        "max": 2020,
+        "step": 1,
+        "name": "Select Year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "fill": "lightgrey"},
+      "transform": [
+        {"filter": "datum.properties.ISO3 != 'ATA'"},
+        {"calculate": "'missing'", "as": "data"}
+      ],
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.ISO3", "title": "Country"},
+          {"field": "value"}
+        ]
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "value",
+          "scale": {"type": "log", "domain": [0.0001, 1]},
+          "legend": {"title": null, "format": "$,.0r"},
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "value", "title": "Share of exports"}
+        ]
+      },
+      "mark": {"type": "geoshape"}
+    }
+  ]
+}

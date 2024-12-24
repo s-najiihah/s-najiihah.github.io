@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/project/C2_clean_plastic_exports.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Region",
+        "oneOf": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "Northern America",
+          "Latin America and the Caribbean",
+          "Oceania"
+        ]
+      }
+    }
+  ],
+  "height": 280,
+  "width": "450",
+  "title": {
+    "text": "Plastic waste exports between 2005 and 2023",
+    "subtitle": ["Source: UNCTAD", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": 0, "tickCount": 10}
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Plastic Waste Exports",
+      "axis": {}
+    },
+    "color": {
+      "condition": {
+        "param": "hover",
+        "field": "Region",
+        "legend": {
+          "offset": -2,
+          "labelExpr": "datum.label == 'Africa' ? 'Africa' : datum.label == 'Asia' ? 'Asia' : datum.label == 'Europe' ? 'Europe' : datum.label == 'Northern America' ? 'Northern America' : datum.label == 'Latin America and the Caribbean' ? 'Latin America and the Caribbean' :datum.label == 'Oceania' ? 'Oceania' : 'Oceania'"
+        },
+        "type": "nominal",
+        "scale": {
+          "range": [
+            "#009642",
+            "#E86200",
+            "#00A9E8",
+            "#5B5E76",
+            "#B5D37E",
+            "#AA649E",
+            "#F7B913"
+          ]
+        }
+      },
+      "value": "grey"
+    },
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"field": "Region", "title": "Region"},
+      {"field": "Value", "title": "Value"},
+      {"field": "Year"}
+    ]
+  },
+  "layer": [
+    {
+      "description": "transparent layer to make it easier to trigger selection",
+      "params": [
+        {
+          "name": "hover",
+          "value": [{"Region": "Asia"}],
+          "select": {"type": "point", "fields": ["Region"], "on": "mouseover"}
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    },
+    {"mark": "line"},
+    {
+      "encoding": {"x": {"field": "year"}, "y": {"field": "value"}},
+      "layer": [
+        {"mark": {"type": "circle"}},
+        {
+          "mark": {"type": "text", "align": "left", "dx": 4},
+          "encoding": {"text": {"field": "Region", "type": "nominal"}}
+        }
+      ]
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

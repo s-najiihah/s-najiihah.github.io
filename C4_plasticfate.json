@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/project/C4_plastic_fate.csv"
+  },
+  "title": {
+    "text": "What happens to our waste?",
+    "color": "#4ea1d4",
+    "fontSize": 16,
+    "subtitle": "Share of plastic waste that is recycled, incinerated, landfilled and mismanaged",
+    "subtitlePadding": 5,
+    "fontWeight": 600,
+    "anchor": "start"
+  },
+  "width": 550,
+  "height": 250,
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2019,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2019,
+        "step": 1,
+        "name": "End year:"
+      }
+    },
+    {
+      "name": "Indicator",
+      "value": "World",
+      "bind": {
+        "input": "select",
+        "options": [
+          "World",
+          "Americas (excl. USA)",
+          "Asia (excl. China and India)",
+          "Europe"
+        ],
+        "name": "Indicator:"
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "year(datum.Year)", "as": "year"},
+    {"filter": "datum.year >= minYear"},
+    {"filter": "datum.year <= maxYear"},
+    {"filter": "datum.Entity == Indicator"},
+    {"calculate": "datum.Value / 100", "as": "ValueNormalized"}
+  ],
+  "mark": {"type": "area", "clip": true, "color": "rgba(128,0,0,.8)"},
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title": null},
+    "y": {"field": "ValueNormalized", "type": "quantitative", "title":null,"axis": {"format": ".0%"}},
+    "color": {
+      "field": "Variable",
+      "scale": {
+        "domain": [
+          "value_recycled_share",
+          "value_incinerated_share",
+          "littered_mismanaged_combined_share",
+          "value_landfilled_share"
+        ],
+        "scale": {"scheme": "viridis"}
+      },
+      "legend": {"title": "Type of Waste"}
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal", "title": "Entity"},
+      {"field": "Year", "type": "temporal", "format": "%Y", "title": "Year"},
+      {"field": "Value", "type": "quantitative", "title": "Value"}
+    ]
+  }
+}
