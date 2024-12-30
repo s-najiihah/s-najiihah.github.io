@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top exporters of plastic waste in 2023",
+    "subtitle": ["Source: UN Comtrade", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "rgba(0,0,0,0.7)",
+    "anchor": "start",
+    "color": "rgba(0,0,0,0.8)"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C3_top_10_exporters_and_importers.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": "datum.Type === 'Importer'"}],
+  "mark": {"type": "bar", "clip": true, "color": "#EB984E", "size": 20},
+  "height": 300,
+  "width": "container",
+  "encoding": {
+    "y": {
+      "field": "reporterDesc",
+      "type": "nominal",
+      "title": "",
+      "sort": {"field": "netWgt", "order": "descending"},
+      "bandSize": 2
+    },
+    "x": {
+      "field": "netWgt",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false},
+      "scale": {"zero": true}
+    },
+    "tooltip": [
+      {"field": "reporterDesc", "title": "Country", "type": "nominal"},
+      {
+        "field": "primaryValue",
+        "title": "Trade Value in US dollars",
+        "type": "quantitative"
+      },
+      {"field": "netWgt", "title": "Net weight", "type": "quantitative"}
+    ]
+  }
+}

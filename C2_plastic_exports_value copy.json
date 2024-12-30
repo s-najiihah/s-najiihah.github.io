@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/project/C2_clean_plastic_exports.csv",
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C2_clean_plastic_imports.csv",
     "format": {"type": "csv"}
   },
   "transform": [
@@ -22,7 +22,7 @@
   "height": 280,
   "width": "450",
   "title": {
-    "text": "Plastic waste exports between 2005 and 2022",
+    "text": "Plastic waste imports between 2005 and 2022",
     "subtitle": ["Source: UNCTAD", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -33,16 +33,13 @@
     "x": {
       "field": "Year",
       "type": "ordinal",
-      "title": "",
-      "axis": {
-        "labelAngle": 0,
-        "labelExpr": "datum.value % 2 === 0 ? datum.value : ''"
-      }
+      "title": "Year",
+      "axis": {"labelAngle": 0, "tickCount": 10}
     },
     "y": {
       "field": "Value",
       "type": "quantitative",
-      "title": "",
+      "title": "Plastic Waste Exports",
       "axis": {}
     },
     "color": {
