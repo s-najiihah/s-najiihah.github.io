@@ -8,19 +8,35 @@ body { /* We can style any HTML element by using its name - here we're styling t
   /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #00303F;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  background-color: #14365d;
   margin:0 auto;
-  max-width: 800px;
+  max-width: 750px;
   padding-top: 60px;
 }
 
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
+h1 {
+  color: #F1E0C6;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+h6 {
+  color: #9ddce9;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h2, h3, h4, h5,  {
+  color: #00303F;
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
@@ -69,7 +85,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 /* Section styling */
 section {

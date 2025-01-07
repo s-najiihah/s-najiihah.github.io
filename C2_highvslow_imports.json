@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Share of global plastic waste imports",
+    "subtitle": [
+      "Between 2010 - 2022. Data processed by OWID. Source: United Nations Comtrade Database (2023)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "subtitleColor": "rgba(0,0,0,0.7)",
+    "color": "rgba(0,0,0,0.8)"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C2_imports_exports.csv"
+  },
+  "height": 300,
+  "width": 450,
+  "transform": [{"filter": "datum.type === 'import_share'"}],
+  "mark": {"type": "line", "strokeWidth": 2},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false, "labelOpacity": 0.6, "labelFontWeight": "lighter"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "tickCount": 3,
+        "labelFontWeight": "lighter",
+        "titleOpacity": 0.6,
+        "labelOpacity": 0.6,
+        "titleAnchor": "start",
+        "titleAngle": 0,
+        "titleY": -10,
+        "labelExpr": "datum.value + '%'"
+      }
+    },
+    "color": {
+      "field": "group",
+      "legend": {
+        "orient": "right",
+        "title": "Income group",
+        "direction": "horizontal",
+        "legendX": 0,
+        "legendY": -60,
+        "columns": 1
+      },
+      "title": null
+    },
+    "tooltip": [
+      {"field": "group", "title": "Income group"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Import share",
+        "format": ".2"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "color": {"field": "group", "type": "nominal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["year"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": "point",
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [{"filter": {"param": "hover", "empty": false}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "year", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"field": "value", "type": "quantitative", "format": ".2f"},
+            "x": {"type": "temporal", "field": "year"},
+            "y": {"type": "quantitative", "field": "value"}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 1,
+                "align": "top",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {"color": {"type": "nominal", "field": "group"}}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
