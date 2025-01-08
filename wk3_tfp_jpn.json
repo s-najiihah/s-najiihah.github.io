@@ -3,7 +3,10 @@
   "data": {
     "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/wk3_tfp_jpn.csv"
   },
-  "title": {"text": "Japan's Total Factor Productivity 1980-2020"},
+   "title": {
+    "text": "Japan's Total Factor Productivity 1980-2020",
+    "subtitle": ["Source: FRED"]
+  },
   "width": 450,
   "height": 200,
   "mark": {"type": "line", "color": "dodgerblue"},

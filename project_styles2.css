@@ -35,7 +35,15 @@ h6 {
   text-align: center;
 }
 
-h2, h3, h4, h5,  {
+h2 {
+  color: #F1E0C6;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+
+h3, h4, h5,  {
   color: #00303F;
   margin-top: 24px;
   margin-bottom: 16px;

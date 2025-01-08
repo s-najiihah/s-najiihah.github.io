@@ -11,7 +11,7 @@
   "transform": [{"fold": ["Contribution"], "as": ["measure", "value"]}],
   "mark": "bar",
   "encoding": {
-    "x": {"field": "value", "type": "quantitative"},
+    "x": {"field": "value", "type": "quantitative","title":"Capital Contribution (%)"},
     "y": {"field": "Country", "type": "nominal", "sort": "-x"},
     "color": {
       "field": "Country",

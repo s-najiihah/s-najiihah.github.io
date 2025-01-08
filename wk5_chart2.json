@@ -11,7 +11,7 @@
   "transform": [{"fold": ["Voting_power"], "as": ["measure", "value"]}],
   "mark": "bar",
   "encoding": {
-    "x": {"field": "value", "type": "quantitative"},
+    "x": {"field": "value", "type": "quantitative","title": "Voting power (%)" },
     "y": {"field": "Country", "type": "nominal", "sort": "-x"},
     "color": {
       "field": "Country",

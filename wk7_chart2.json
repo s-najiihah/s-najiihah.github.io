@@ -25,7 +25,7 @@
       "encoding": {
         "latitude": {"field": "lat", "type": "quantitative"},
         "longitude": {"field": "lng", "type": "quantitative"},
-        "color": {"field": "admin_name", "type": "nominal"},
+        "color": {"field": "admin_name", "type": "nominal","title": "Capital"},
         "tooltip": [
           {"field": "admin_name", "title": "state"},
           {"field": "city"},
