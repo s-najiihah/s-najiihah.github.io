@@ -35,10 +35,10 @@
 
 <section>
     <div class="chart-description">
-        <h4>Aims </h4>
+        <h3>Project aims </h3>
         <p> This project seeks to understand the plastic waste trade and plastic pollution through the lens of waste colonialism. 
             The term 'waste colonialism' refers to the practice of exporting waste from high income to low income countries. The key question I want to ask is, how much of our plastic waste ends up in the ocean?
-            
+        
         <p>  Following China's plastic import ban in 2020, Malaysia and several other developing countries, such as Vietnam and Turkey, 
             became the top destination for plastic waste from developed countries. At the same time, mainstream media frequently blames 
             these countries for being the world's large polluters of plastic waste, when these are actually outsourced from developed nations.
@@ -52,23 +52,22 @@
 
 <section>
     <div class="chart-description">
-        <h3>Data Sources: Accessibility and Challenges </h3>
-        <p> <b>Data sources:</b>
-            <ul> Given increasing global concerns on plastic pollution, I was able to leverage various sources to obtain the necessary
-                data for my project. I
-                <li>Our World in Data (OWID): OWID contained many useful datasets on plastic pollution, especially since </li>
-                <li>UN Comtrade: </li>
-                <li>UNCTAD </li>
-                <li>UNEP's Global Partnership on Plastic Pollution and Marine Litter</li>
-                <li>National Centers for Environmental Information</li>
-
-            </ul>
+        <h3>Accessibility of data sources </h3>
+        <p> <b>Data sources:</b></p>
+        
+        <p>Given increasing global concerns regarding plastic pollution, I leveraged various sources to obtain the necessary data for my visualisation project.
+                 Using the programming skills acquired in PP434, such as Python and Vegalite, I was able to access and clean large datasets relevant to plastic waste. 
+                </p>
+                 <p>
+                    The first approach involved automated data extraction, where I used APIs from Our World in Data (OWID) and the World Bank (TWB). 
+                OWID was especially useful as the platform had already processed certain datasets relevant to my project, while TWB provided comprehensive data such as population size and GDP.
+                 </p>
+                 <p>
+                  I supplemented the first approach by manually downloading other relevant data related to plastic waste from UN Comtrade, UN Trade and Development (UNCTAD),  UNEP's Global Partnership on Plastic Pollution and Marine Litter (GPML), and the National Centers for Environmental Information (NCEI).
+            </p>
+            
         </p>
-        <p> <ul><b>Challenges</b></ul>
-            <ul>
-                <li></li>
-                <li>UN Comtrade: </li>
-        </p>
+        
     </div>
      <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
@@ -81,8 +80,13 @@
     <div class="chart-description"> 
         <h3>Section 1: Plastic consumption across time</h3>
         <h4>How has waste generation change across countries and regions in the past decade?</h4>
-        <p> The following graphs visualise the plastic waste generated per capita in 2010 and 2023.
+        <p> The following visualisations seek to illustrate the plastic waste generated per capita in 2010 and 2023, highlighting how the world is increasingly consuming more plastic.
+            The first chart uses data that was processed by Our World in Data (OWD) to capture the daily plastic waste generation per person, measured in kg. 
+            Given that the original data was from a research paper, there were no subsequent data to show a comparison. 
         </p>
+
+        <p>Thus, I used data from various sources to create a similar visualisation for 2023 using Python. The main dataset was then merged with GDP and population data that I fetched using the World Bank API in Python. Due to limited data, however,
+            I could only find data based on annual plastic waste emitted per capita in 2023, instead of daily waste.  </p>
     </div>
     <figure id="Location1"></figure> 
     
@@ -111,87 +115,152 @@
     <div class="chart-description">
         <h3>Section 2: Trends in plastic waste imports and exports</h3>
         <h4></h4>
-        <p> 
-        </p>
+        <p> The following charts explore the broader trends in plastic waste imports and exports at the international level, using The World Bank's classification of four income groups: low, lower-middle, upper-middle, and high-income countries.
+            The selection tool allows us to compare across countries based on their income groups. </p>
+            
     </div>
     <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+   
     <div class="container">
         <a class="codeButton" href="https://ourworldindata.org/grapher/share-plastic-waste-imports?tab=chart&country=High-income+countries~Upper-middle-income+countries~Lower-middle-income+countries~Low-income+countries#sources-and-processing">Source</a>
         <a class="codeButton"
-                    href="https://colab.research.google.com/drive/17p1Mb5lciYc-pzX40XKL41nTK_Mw5r3X#scrollTo=4TIDU69auFNl">Colab</a>
+                    href="https://colab.research.google.com/drive/17p1Mb5lciYc-pzX40XKL41nTK_Mw5r3X">Colab</a>
         <a class="codeButton"
             href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C2_imports_exports.csv">Data</a>
         <a class="codeButton"
             href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C2_highvslow_imports.json">Code</a>
     </div>
+
+    <p>High income countries have consistently exported high amounts of plastic waste, while upper middle income countries imported high amounts of plastic waste.
+        However, we see a change after 2017, where high income countries started to import more waste, while the amount of waste imported by upper middle-income countries declined significantly. This is likely due to the import ban imposed by China in 2017.
+    </p>
 </section>
 
 
 <section>
     <div class="chart-description"> 
-        <h3>Where are we now? </h3>
+        <h3>Section 3: Which countries exported and imported the most waste in 2023? </h3>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            In this section, I wanted to showcase the latest data available in 2023, specifically looking at both the top 10 exporters and importers of plastic waste. 
+            Now that we have observed the trends in plastic waste imports and exports at the international level, we can look at which countries are among the top exporters and importers. I used Python in Google Colab to clean and filter the raw data from UN Comtrade.
         </p>
     </div>
     <figure id="Location3a"></figure> 
     <figure id="Location3b"></figure>  <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    <div class="container">
+        <a class="codeButton"
+                    href="https://colab.research.google.com/drive/1fJVnR13bKMjU3PeZtSyjy234WuqI1eef#scrollTo=p77q_jJKEF21">Colab</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C3_top_10_exporters_and_importers.csv">Data</a>
+        <a class="codeButton"
+            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C3a_top_exporters.json">Code 1</a>
+        <a class="codeButton"
+            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C3b_top_importers.json">Code 2</a>
+        </div>
+            <p>Similar to our observation in Section 2, we observe that all of the top exporters are high-income countries, although the top importers consists of both high and middle-income countries. </p>
+    
+            <p>While it is beyond the scope of this project, further work can be conducted to understand how the top importers handle their plastic waste. </p>
+
+    
+        </div>
 </section>
+
 
 <section>
     <div class="chart-description">
-        <h3>The fate of our plastics: A comparison of different regions</h3>
+        <h3>Section 4: The fate of our plastics</h3>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
             Once plastic waste is exported, what will happen to them in receiving countries? The following graph visualises how plastic waste is recycled, 
-            incinerated, landfilled, and littered and mismanaged.</p>
+            incinerated, landfilled, and littered and mismanaged. I accessed the data via OWID's API in Python and cleaned the data based on the relevant information.  </p>
     </div>
 
         <figure id="Location4"> </figure>
-        <p>The graph allows us to understand the fate of plastic waste in different regions. China warranted its own datapoint given its</p>
+        <a class="codeButton" href="https://ourworldindata.org/grapher/share-plastic-fate?time=earliest..latest&country=~OWID_WRL">Source</a>
+        <a class="codeButton"
+            href="https://colab.research.google.com/drive/1c2RFr1poJ78XVzEXFWojvZ089vSlQ_tA#scrollTo=IrC7ntC0wtOl">Colab</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C4_plastic_fate.csv">Data</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C4_plasticfate.json">Code</a>
+            <p>The graph allows us to understand the fate of plastic waste in different regions. China warranted its own datapoint given that it is a major player in the production and consumption of plastic. This is an interactive chart - you can click on the relevant region to highlight its series. </p>
 
 </section>
 
 <section>
     <div class="chart-description">
-        <h3>What happens to mismanaged plastic waste?</h3>
+        <h3>Section 5: Zooming in - How much mismanaged plastic waste is leaked into the ocean?</h3>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            The map
+            The map depicts the estimated amount of mismanaged plastic waste that leaves a given country and remains in the ocean or prospectively beached on the coasts of other countries during a ten-year period. The values represent the expected amount of plastic waste in tonnes.
         </p>
     </div>
     <figure id="Location5"></figure> 
     <div class="container">
         <a class="codeButton" href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2021.667591/full">Source</a>
         <a class="codeButton"
-            href="https://colab.research.google.com/drive/1c2RFr1poJ78XVzEXFWojvZ089vSlQ_tA#scrollTo=IrC7ntC0wtOl">Colab</a>
+            href="https://colab.research.google.com/drive/1c2RFr1poJ78XVzEXFWojvZ089vSlQ_tA#scrollTo=XxmBcOUXtEG7">Colab</a>
         <a class="codeButton"
             href="https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C5_map_oceans_coasts.csv">Data</a>
         <a class="codeButton"
-            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C1_plasticgen_capita_2023.json">Code</a>
+            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C5_map1_mismanaged.json">Code</a>
     </div>
 </section>
 
 <section>
     <div class="chart-description">
-        <h3>Section 6: Regression analysis</h3>
+        <h3>Section 6: Mapping microplastics across the world's oceans </h3>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            Is there correlation between share of plastic waste imports and its ... Map Visualization:
-            Or map
-            Use a heatmap or scatter plot to display plastic waste leakage across countries, overlaid with import volumes to visualize the geographic concentration of impacts.
-
-            Imports vs recycling rates?
+            The following map was produced using data of floating microplastics from the National Centers for Environmental Information, a repository for multiple datasets of marine microplastics. The data is aggregated and contributed from various research and field studies, and remains a growing database.
         </p>
+
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            The points represent micrpoplastics of various concentration across different oceans around the world.        </p>
     </div>
     <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    <div class="container">
+        <a class="codeButton" href="https://www.ncei.noaa.gov/products/microplastics">Source</a>
+        <a class="codeButton"
+            href="https://colab.research.google.com/drive/1YshCDKbkEw-dl49Jae1_R9-tv9rx92Cb">Colab</a>
+        <a class="codeButton"
+            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C6_map_microplastics.csv">Data</a>
+        <a class="codeButton"
+            href="https://github.com/s-najiihah/s-najiihah.github.io/blob/main/C6_microplastics_map.json">Code</a>
+    </div>
 </section>
 
 <section>
     <div class="chart-description">
-        <h3>Analytica</h3>
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            Comparing plastic waste imports based on different regions and then focusing in on different countries via the maps.
+        <h3>Challenges</h3>
+            <p><ul> One of the key issues I encountered during the project was when I attempted to use the UN Comtrade API in Python, despite the API being publicly available and retrieving my subscription key. 
+                To overcome this, I manually downloaded the data required in CSV format through the UN Comtrade’s website and filtered the relevant data for my project. 
+                The API for other websites, such as UNCTAD, was only available in R, while the other data sources did not have API. Thus, I had to manually download, clean, and process these datasets in Python. 
+                </ul></p>
+                <p><ul>
+                    Despite the large amount of data on plastic waste, most of these datasets were inconsistent and I encountered a lot of missing values, such as ISO3 codes for some of the datasets. 
+                    I turned to Python libraries to address these challenges, such as by using pandas and py country to conduct data manipulation and analysis.                 </ul></p>
+                <p><ul>
+                    Furthermore, there was also limited data on plastic waste for smaller and low-income countries, which may not accurately reflect the plastic pollution issue in these respective countries.           </ul></p>
+           </ul>
+        </p>
         </p>
     </div>
 </section>
+
+
+<section>
+    <div class="chart-description">
+        <h3>Conclusion</h3>
+        <p><ul> Globally, plastic waste consumption is increasing and will continue to increase in the foreseeable future, as illustrated in Section 1. 
+            With increasing consumption, trade in plastic waste will increase, resulting in irreversible implications for the environment and wider society.
+            </ul></p>
+        <p><ul> As portrayed by the visualisations in Sections 2 – 4, there is also some element of waste colonialism in the plastic waste trade. 
+            Top exporters of plastic waste are mostly high-income countries, while the importing countries are middle-income countries that may lack the proper infrastructure to recycle or sustainably dispose of plastic waste. 
+            Thus, they effectively become a dumping site for richer countries. This calls for further work to examine the destinations of plastic waste from top exporters. 
+        </ul></p>
+        <p><ul>The amount of plastic waste emitted into the ocean, which later disintegrates into microplastics, is an alarming phenomenon with wide-reaching environmental and health implications. 
+            Policy intervention is therefore necessary to address the root causes of plastic pollution, with a specific focus on equitable solutions that promote environmental justice.
+        </ul></p>
+    </div>
+</section>
+
 
 
 <script>

@@ -72,11 +72,14 @@
       }
     },
     "color": {
-      "field": "region",
-      "type": "nominal",
-      "legend": {"title": "", "titleOpacity": 0.7, "labelOpacity": 0.8},
-      "scale": {"scheme": "observable10"}
-    },
+  "field": "region",
+  "type": "nominal",
+  "legend": {"title": "", "titleOpacity": 0.7, "labelOpacity": 0.8},
+  "scale": {
+    "domain": ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+    "range": ["#4269D0", "#6CC5B0", "#edc948", "#FF725C", "#3CA951"]
+  }
+},
     "opacity": {"condition": {"param": "region", "value": 0.8}, "value": 0.1},
     "tooltip": [
       {"field": "Country", "type": "nominal", "title": "Country"},
