@@ -5,7 +5,7 @@
   },
   "title": {
     "text": "What happens to our waste?",
-    "color": "#4ea1d4",
+    "color": "rgba(0,0,0,0.8)",
     "fontSize": 16,
     "subtitle": [
       "Share of plastic waste that is recycled, incinerated, landfilled and mismanaged",
@@ -96,11 +96,11 @@
       "legend": {
         "title": "Countries/Regions",
         "offset": 20,
-        "orient": "none",
+        "orient": "right",
         "direction": "horizontal",
         "legendX": 0,
         "legendY": -60,
-        "columns": 3
+        "columns": 1
       }
     },
     "tooltip": [

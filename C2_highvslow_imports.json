@@ -3,10 +3,10 @@
   "title": {
     "text": "Share of global plastic waste imports",
     "subtitle": [
-      "Between 2010 - 2022. Data processed by OWID. Source: United Nations Comtrade Database (2023)"
+      "Between 2010 - 2022. Data processed by OWID.",
+      "Source: United Nations Comtrade Database (2023)"
     ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
     "anchor": "start",
     "subtitleColor": "rgba(0,0,0,0.7)",
     "color": "rgba(0,0,0,0.8)"
@@ -46,6 +46,8 @@
         "orient": "right",
         "title": "Income group",
         "direction": "horizontal",
+        "titleOpacity": 0.7, 
+        "labelOpacity": 0.8,
         "legendX": 0,
         "legendY": -60,
         "columns": 1

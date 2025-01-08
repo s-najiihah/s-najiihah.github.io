@@ -13,8 +13,15 @@
   },
   "height": 300,
   "width": 450,
+   "params": [
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+    {"name": "select", "select": "point"}
+  ],
   "transform": [{"filter": "datum.type === 'exporter'"}],
-  "mark": {"type": "bar", "color": "#4292c6"},
+  "mark": {"type": "bar", "fill": "#4292c6",
+    "stroke": "#FF9900",
+    "cursor": "pointer",
+    "tooltip": {"content": "encoding"}},
   "encoding": {
     "y": {
       "field": "country",
@@ -28,6 +35,13 @@
       "title": null,
       "axis": {"grid": false},
       "scale": {}
+    },
+    "strokeWidth": {
+      "condition": [
+        {"param": "select", "empty": false, "value": 2},
+        {"param": "highlight", "empty": false, "value": 1}
+      ],
+      "value": 0
     },
     "tooltip": [
       {"field": "country", "type": "nominal", "title": "Country"},

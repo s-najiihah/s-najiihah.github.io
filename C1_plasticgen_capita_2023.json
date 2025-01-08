@@ -48,7 +48,7 @@
       "scale": {"type": "log"},
       "axis": {
         "grid": false,
-        "title": "Daily plastic waste generation, per capita",
+        "title": "Annual plastic waste generation, per capita",
         "titleFontWeight": "normal",
         "labelFontWeight": "lighter",
         "titleOpacity": 0.6,

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 300,
+  "title": {
+    "text": "Floating microplastics concentration across ocean surfaces ",
+    "subtitle": [
+      "Between 2010 to 2021",
+      "Source: National Oceanic and Atmospheric Administration (NOAA)"
+    ],
+    "subtitleColor": "rgba(0,0,0,0.7)",
+    "color": "rgba(0,0,0,0.8)"
+  },
+  "projection": {"type": "mercator", "scale": 85, "translate": [260, 190]},
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightsteelblue",
+        "opacity": 0.5,
+        "stroke": "black",
+        "strokewidth": 0.1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/s-najiihah/s-najiihah.github.io/refs/heads/main/C6_map_microplastics.csv"
+      },
+      "transform": [
+        {
+          "calculate": "datum.measurement >= 10 ? 'Very High' : datum.measurement >= 1 ? 'High' : datum.measurement >= 0.005 ? 'Medium' : datum.measurement >= 0.0005 ? 'Low' : 'Very Low'",
+          "as": "measurement_group"
+        },
+        {"filter": "datum.year == selectedYear"}
+      ],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "longitude": {"field": "long", "type": "quantitative"},
+        "color": {
+          "field": "measurement_group",
+          "type": "nominal",
+          "title": "Concentration class",
+          "scale": {
+            "domain": ["Very High", "High", "Medium", "Low", "Very Low"],
+            "scheme": ["#f7fcb9", "#addd8e", "#31a354", "#2b8cbe", "#08589e"]
+          }
+        },
+        "tooltip": [
+          {"field": "oceans", "title": "Ocean"},
+          {
+            "field": "measurement",
+            "title": "Microplastic concentration (pieces/m3)"
+          },
+          {"field": "measurement_group", "title": "Density"},
+          {"field": "year", "title": "Year"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

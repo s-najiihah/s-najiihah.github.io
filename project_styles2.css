@@ -7,14 +7,14 @@
 body { /* We can style any HTML element by using its name - here we're styling the body */
   /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #00303F;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
   background-color: #14365d;
   margin:0 auto;
   max-width: 750px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 
@@ -96,6 +96,13 @@ section {
   box-sizing: border-box; /* Add this to include padding in the width calculation */
 }
 
+.figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Styling for iframe wrapper */
 .iframe-wrapper {
   position: relative;
@@ -173,6 +180,11 @@ section {
   background: #F1F0F4;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+}
+
 .codeButton {
   background-color: transparent;
   border: 1px solid rgb(5, 5, 6);
@@ -184,53 +196,15 @@ section {
   box-sizing: content-box;
   align-items: flex-start;
   display: inline-block;
-  font-size: 12px;
+  font-size: 10px;
   margin: 1px 2px 1px 2px;
   text-decoration: none;
   max-width: 100px;
   outline-offset: 2px;
   overflow: hidden;
-  padding: 5px 12px;
-  text-align: left;
+  padding: 5px 10px;
+  text-align: center;
   text-overflow: ellipsis;
   transition: border-color,background-color .5s ease;
   white-space: nowrap;
-}
-
-#myBtn {
-border: 1px solid rgb(4, 1, 12);
-background-color: transparent; /* Set a background color */
-color: rgb(241, 240, 244); /* Text color */
-cursor: pointer; /* Add a mouse pointer on hover */
-font-family: 'Roboto', sans-serif;
-line-height: 16px;
-font-weight: 600;
-border-radius: 150px;
-box-sizing: content-box;
-align-items: flex-start;
-display: inline-block;
-font-size: 12px;
-margin: 1px 2px 1px 2px;
-text-decoration: none;
-max-width: 100px;
-outline-offset: 2px;
-overflow: hidden;
-padding: 5px 12px;
-text-align: left;
-text-overflow: ellipsis;
-transition: border-color,background-color .5s ease;
-white-space: nowrap;
-}
-
-#myBtn:hover {
-background-color: #555; /* Add a dark-grey background on hover */
-}
-
-.loader {
-border: 16px solid #070505; 
-border-top: 16px solid #FF9900;
-border-radius: 50%;
-width: 120px;
-height: 120px;
-animation: spin 2s linear infinite;
 }
