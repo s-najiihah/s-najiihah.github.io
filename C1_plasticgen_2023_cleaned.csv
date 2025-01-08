@@ -6,12 +6,16 @@ Japan,JPN,7.99,Packaging_Electronics,84.8,63.2,Medium,46157.6360184941,124516650
 Germany,DEU,6.28,Automotive_Packaging,56.1,75.6,Low,63578.141098086,83280000.0,Europe
 Brazil,BRA,5.96,Consumer_Packaging,1.2,28.1,Medium,19018.2390697496,211140729.0,Americas
 Indonesia,IDN,5.85,Food_Packaging,11.8,21.3,Very_High,13889.8828825663,281190067.0,Asia
+Russia,RUS,5.84,Industrial_Consumer,5.6,40.2,Medium,39753.45703125,143826130.0,Europe
 United Kingdom,GBR,5.03,Packaging_Consumer,46.2,74.3,Low,54542.016908202,68350000.0,Europe
 France,FRA,4.98,Packaging_Consumer,27.3,73.1,Low,55441.1857994818,68287487.0,Europe
 Mexico,MEX,4.43,Consumer_Packaging,6.7,34.2,High,22142.607281478,129739759.0,Americas
 Canada,CAN,3.89,Packaging_Consumer,9.4,102.1,Low,55918.9297008845,40097761.0,Americas
 Italy,ITA,3.83,Packaging_Industrial,41.2,63.4,Medium,53312.0698662293,58993475.0,Europe
+Turkey,TUR,3.21,Consumer_Packaging,12.1,38.5,High,34609.9155118999,85325965.0,Asia
+South Korea,KOR,2.91,Electronics_Packaging,59.1,56.7,Medium,50572.2499861828,51712619.0,Asia
 Spain,ESP,2.58,Consumer_Packaging,37.8,54.9,Medium,47141.5410387803,48347910.0,Europe
+Vietnam,VNM,2.54,Food_Packaging,15.3,25.8,Very_High,13491.879417397,100352192.0,Asia
 Thailand,THA,2.41,Consumer_Packaging,17.6,34.5,High,21142.6643331162,71702435.0,Asia
 Malaysia,MYS,2.31,Industrial_Consumer,24.3,70.2,High,32812.2997525336,35126298.0,Asia
 Poland,POL,2.21,Packaging_Industrial,34.5,58.3,Low,44384.168182283,36687353.0,Europe
@@ -31,6 +35,7 @@ Sweden,SWE,1.51,Packaging_Industrial,50.6,146.3,Low,63114.6797881276,10536632.0,
 Austria,AUT,1.48,Industrial_Packaging,56.4,164.8,Low,65015.1345865741,9131761.0,Europe
 Ukraine,UKR,1.47,Consumer_Packaging,3.4,33.7,Medium,15885.2255859375,37732836.0,Europe
 Greece,GRC,1.45,Consumer_Packaging,21.3,139.2,Medium,36905.4535773689,10405588.0,Europe
+Czech Republic,CZE,1.43,Industrial_Packaging,41.7,133.9,Low,49681.058065333,10864042.0,Europe
 Romania,ROU,1.41,Consumer_Packaging,13.8,73.4,Medium,40665.5282935973,19059479.0,Europe
 Portugal,PRT,1.39,Consumer_Packaging,31.2,135.8,Medium,41755.4793151878,10578174.0,Europe
 Hungary,HUN,1.37,Industrial_Packaging,30.1,141.5,Low,40543.9936316007,9592186.0,Europe
@@ -62,6 +67,7 @@ Panama,PAN,0.87,Consumer_Packaging,5.4,198.6,High,35863.880148831,4458759.0,Amer
 Kuwait,KWT,0.85,Consumer_Packaging,10.2,195.4,High,46458.2004898213,4853420.0,Asia
 Jordan,JOR,0.83,Consumer_Packaging,7.8,80.6,Medium,9362.58776056423,11439213.0,Asia
 Oman,OMN,0.79,Consumer_Packaging,3.2,151.9,High,38311.4183413339,5049269.0,Asia
+Bolivia,BOL,0.77,Consumer_Packaging,2.8,65.3,Low,9843.97014174079,12244159.0,Americas
 Paraguay,PRY,0.75,Consumer_Packaging,4.1,104.2,Low,15783.1150120746,6844146.0,Americas
 Latvia,LVA,0.73,Industrial_Packaging,43.2,386.8,Low,37007.3683672158,1877445.0,Europe
 Estonia,EST,0.71,Industrial_Packaging,31.8,534.6,Low,42471.8236769525,1370286.0,Europe
@@ -75,6 +81,7 @@ Iceland,ISL,0.57,Consumer_Packaging,55.6,1564.4,Low,67255.6720087402,393349.0,Eu
 Qatar,QAT,0.55,Consumer_Packaging,8.9,188.7,High,116159.142559471,2656032.0,Asia
 Cambodia,KHM,0.53,Consumer_Packaging,5.4,31.2,High,6690.58942585792,17423880.0,Asia
 Myanmar,MMR,0.51,Consumer_Packaging,2.1,9.3,High,5364.13797034407,54133798.0,Asia
+Laos,LAO,0.49,Consumer_Packaging,1.8,66.2,Medium,8372.15591874407,7664993.0,Asia
 Mongolia,MNG,0.47,Consumer_Packaging,0.9,141.6,Low,16222.8638898529,3481145.0,Asia
 Afghanistan,AFG,0.45,Consumer_Packaging,0.5,11.4,Low,1992.42439419795,41454761.0,Asia
 Iraq,IRQ,0.39,Consumer_Packaging,1.2,9.6,Medium,12711.0616746745,45074049.0,Asia
@@ -83,6 +90,7 @@ Sudan,SDN,0.35,Consumer_Packaging,0.4,7.9,Medium,2469.19458007813,50042791.0,Afr
 Somalia,SOM,0.33,Consumer_Packaging,0.1,20.4,High,1402.46992062464,18358615.0,Africa
 Ethiopia,ETH,0.31,Consumer_Packaging,0.7,2.6,Low,2755.45709577808,128691692.0,Africa
 Kenya,KEN,0.29,Consumer_Packaging,7.8,5.3,High,5682.98916248678,55339003.0,Africa
+Tanzania,TZA,0.27,Consumer_Packaging,5.4,4.4,High,3620.79345703125,66617606.0,Africa
 Uganda,UGA,0.25,Consumer_Packaging,2.3,5.3,Low,2791.05576885861,48656601.0,Africa
 Rwanda,RWA,0.23,Consumer_Packaging,11.2,17.4,Low,3060.02893126731,13954471.0,Africa
 Burundi,BDI,0.21,Consumer_Packaging,0.8,17.3,Low,828.861074309521,13689450.0,Africa
@@ -99,11 +107,13 @@ Madagascar,MDG,0.21,Consumer_Packaging,2.1,7.4,High,1643.30934795137,31195932.0,
 Comoros,COM,0.02,Consumer_Packaging,0.4,22.7,High,3498.80327064529,850387.0,Africa
 Mauritius,MUS,0.08,Consumer_Packaging,15.4,62.8,High,26590.4238819278,1261041.0,Africa
 Seychelles,SYC,0.01,Consumer_Packaging,18.9,101.2,High,29468.9512755913,119773.0,Africa
+Cape Verde,CPV,0.02,Consumer_Packaging,3.4,35.6,High,9288.4021703944,522331.0,Africa
 Sao Tome and Principe,STP,0.01,Consumer_Packaging,0.8,45.2,High,5541.3016760535,230871.0,Africa
 Guinea-Bissau,GNB,0.04,Consumer_Packaging,0.3,19.8,High,2578.80453427114,2153339.0,Africa
 Guinea,GIN,0.08,Consumer_Packaging,0.5,6.0,High,3949.34013510824,14405468.0,Africa
 Sierra Leone,SLE,0.06,Consumer_Packaging,0.4,7.3,High,3034.21894320278,8460512.0,Africa
 Liberia,LBR,0.05,Consumer_Packaging,0.2,9.7,High,1616.92373356695,5493031.0,Africa
+Ivory Coast,CIV,0.18,Consumer_Packaging,1.2,6.7,High,6485.31584901747,31165654.0,Africa
 Ghana,GHA,0.22,Consumer_Packaging,4.5,7.0,High,6796.47361923819,33787914.0,Africa
 Togo,TGO,0.07,Consumer_Packaging,0.8,8.3,High,2767.51655834427,9304337.0,Africa
 Benin,BEN,0.09,Consumer_Packaging,0.6,7.3,High,3721.2245272339,14111034.0,Africa
@@ -114,10 +124,13 @@ Chad,TCD,0.09,Consumer_Packaging,0.1,5.4,Low,1679.4615323912,19319064.0,Africa
 Central African Republic,CAF,0.04,Consumer_Packaging,0.2,8.1,Low,1135.13627681714,5152421.0,Africa
 Cameroon,CMR,0.19,Consumer_Packaging,1.2,7.0,High,4870.57076514365,28372687.0,Africa
 Gabon,GAB,0.06,Consumer_Packaging,2.3,26.4,High,18702.6905177984,2484789.0,Africa
+Republic of Congo,COG,0.08,Consumer_Packaging,0.9,14.2,High,6172.28776650683,6182885.0,Africa
+Democratic Republic of Congo,COD,0.24,Consumer_Packaging,0.4,2.6,Medium,1455.8356229714,105789731.0,Africa
 Djibouti,DJI,0.03,Consumer_Packaging,1.1,29.7,High,6400.62016334753,1152944.0,Africa
 Senegal,SEN,0.16,Consumer_Packaging,1.8,9.4,High,4317.2263915953,18077573.0,Africa
 Gambia,GMB,0.02,Consumer_Packaging,0.5,8.1,High,2932.28059517915,2697845.0,Africa
 Mauritania,MRT,0.07,Consumer_Packaging,0.4,14.8,High,6258.71091329181,5022441.0,Africa
+Moldova,MDA,0.28,Consumer_Packaging,12.3,69.7,Low,15855.2737421842,2457783.0,Europe
 Albania,ALB,0.31,Consumer_Packaging,15.6,107.9,Medium,18244.29201007,2745972.0,Europe
 North Macedonia,MKD,0.29,Consumer_Packaging,17.8,139.2,Low,23584.5648911173,1827816.0,Europe
 Bosnia and Herzegovina,BIH,0.34,Consumer_Packaging,13.2,104.5,Low,20126.3804029322,3185073.0,Europe
@@ -129,6 +142,8 @@ Turkmenistan,TKM,0.35,Consumer_Packaging,2.1,57.3,Low,17866.4041809169,7364438.0
 Uzbekistan,UZB,0.42,Consumer_Packaging,3.4,12.3,Low,10007.6855026198,35652307.0,Asia
 Nepal,NPL,0.38,Consumer_Packaging,5.6,12.8,Low,4859.80010436735,29694614.0,Asia
 Maldives,MDV,0.04,Consumer_Packaging,3.2,72.8,Very_High,22286.9801703571,525994.0,Asia
+Brunei,BRN,0.12,Consumer_Packaging,8.9,269.4,High,76828.3998314969,458949.0,Asia
+East Timor,TLS,0.06,Consumer_Packaging,2.3,44.7,High,4328.50782017194,1384286.0,Asia
 Papua New Guinea,PNG,0.15,Consumer_Packaging,1.2,16.5,High,4174.44164016586,10389635.0,Oceania
 Solomon Islands,SLB,0.03,Consumer_Packaging,0.8,42.9,High,2534.02756338361,800005.0,Oceania
 Vanuatu,VUT,0.02,Consumer_Packaging,1.1,63.8,High,3118.39603259733,320409.0,Oceania
@@ -136,6 +151,7 @@ Fiji,FJI,0.07,Consumer_Packaging,6.7,76.9,High,13652.4908672464,924145.0,Oceania
 Samoa,WSM,0.01,Consumer_Packaging,4.5,49.8,High,6304.34613688419,216663.0,Oceania
 Kiribati,KIR,0.01,Consumer_Packaging,2.1,82.4,High,3195.87039847415,132530.0,Oceania
 Marshall Islands,MHL,0.01,Consumer_Packaging,1.8,168.5,High,6786.69569336005,38827.0,Oceania
+Micronesia,FSM,0.01,Consumer_Packaging,1.5,86.3,High,3886.69657098366,112630.0,Oceania
 Palau,PLW,0.01,Consumer_Packaging,12.3,437.2,High,15796.5402743459,17727.0,Oceania
 Tuvalu,TUV,0.01,Consumer_Packaging,1.2,833.3,High,5812.39328977512,9816.0,Oceania
 Nauru,NRU,0.01,Consumer_Packaging,0.9,927.8,High,12462.8412884717,11875.0,Oceania
