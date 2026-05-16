@@ -6,11 +6,85 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1 { font-family: "Inter", sans-serif; font-weight: 300; }
+body, h1, h2, p, a { font-family: "Inter", sans-serif; font-weight: 300; }
 h1 { letter-spacing: 2px; font-size: 2.5rem; }
 body { background-color: white; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #555; }
+.icon-link { font-size: 1.3rem; color: #000; }
+.icon-link:hover { color: #555; }
+ 
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 0 16px 80px;
+}
+ 
+.card {
+  width: 260px;
+  background-color: #F8FBFE;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  color: #000;
+}
+ 
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+ 
+.circle { padding: 0 4px; }
+ 
+.box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+ 
+.red { background-color: #ff605c; }
+.yellow { background-color: #ffbd44; }
+.green { background-color: #00ca4e; }
+ 
+.card-body {
+  padding: 0.8rem 1rem 1.2rem;
+}
+ 
+.project-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.4rem;
+}
+ 
+.project-title {
+  font-size: 0.95rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+ 
+.project-desc {
+  font-size: 0.78rem;
+  color: #555;
+  line-height: 1.6;
+}
 </style>
 </head>
 <body>
@@ -19,8 +93,8 @@ body { background-color: white; }
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
-<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-  <h1> Najiihah Ahmad </h1>
+<header class="w3-panel w3-center w3-opacity" style="padding:100px 16px 40px">
+   <h1> Najiihah Ahmad </h1>
   
  <p style="font-size:0.85rem; color:#000; margin-top:1rem; line-height:1.7;">
       Public policy professional and MPA candidate at LSE &amp; Columbia,<br>
