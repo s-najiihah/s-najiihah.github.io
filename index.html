@@ -13,9 +13,9 @@
 body { font-family: "Inter", sans-serif; font-weight: 300; background-color: white; color: #000; }
 a { text-decoration: none; color: inherit; }
 
-.page { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+.page { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
 
-header { text-align: center; padding: 100px 0 60px; }
+header { text-align: center; padding: 100px 0 70px; }
 header h1 { font-size: 2.5rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 1rem; }
 header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
 
@@ -26,99 +26,109 @@ header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 1.5rem;
   justify-content: center;
-  padding-bottom: 100px;
-  margin-top: 1rem;
+  padding-bottom: 60px;
 }
 
-.article-wrapper {
+/* Card styles from uiverse.io */
+.card {
   width: 250px;
-  transition: 0.15s all ease-in-out;
+  height: 254px;
+  background: #121212;
   border-radius: 10px;
-  padding: 5px;
-  border: 4px solid transparent;
+  border: 1px #212121 solid;
   cursor: pointer;
-  background-color: white;
-}
-.article-wrapper:hover {
-  box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
-  border-color: #0578c5;
-  transform: translate(-20px, -20px);
-}
-.article-wrapper:active {
-  box-shadow: none;
-  transform: translate(0, 0);
-}
-.article-wrapper:hover .project-hover {
-  transform: rotate(-45deg);
-  background-color: #a6c2f0;
-}
-
-.container-project {
-  width: 100%;
-  height: 130px;
-  border-radius: 10px;
-  background: #e8eef8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-}
-
-.project-info {
-  padding: 12px 8px 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-
-.flex-pr {
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+.card hr {
+  border: none;
+  border-top: 1px solid #313131;
+  margin: 0;
+}
+.content {
+  color: #8e8e8e;
+  margin-left: 0.3em;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  padding: 8px 10px;
+  flex: 1;
+}
+.c1 { color: rgb(55, 91, 158); }
+.c2 { color: rgb(55, 158, 150); }
+.c3 { color: rgb(158, 151, 55); }
+.c4 { color: rgb(88, 158, 55); }
+.comment { opacity: 50%; }
+.title {
+  color: #e8e8e8;
+  font-size: small;
+  float: left;
+  margin-left: 0.6em;
+  margin-top: 0.6em;
+  font-family: 'Courier New', monospace;
+}
+.top {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  font-weight: 450;
+  background-color: #121212;
+  width: 100%;
+  text-align: right;
+  border-radius: 10px 10px 0 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
+.topfix {
+  background-color: #121212;
+  width: 100%;
+  height: 1em;
+  margin-top: -1em;
+}
+button {
+  width: 40px;
+  height: 35px;
+  margin-left: -5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: 0.2s;
+  cursor: pointer;
+}
+button svg path,
+button svg rect,
+button svg polygon { fill: #ffffff; }
+button svg { width: 10px; height: 10px; }
+.close:hover { background-color: #ffffff10; }
+.maximize:hover { background-color: #ffffff10; }
+.minimize:hover { background-color: #ffffff10; }
 
-.project-title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: black;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.card-link {
+  display: block;
+  color: #4e84ff;
+  font-size: 0.7rem;
+  margin: 0 10px 10px;
+  font-family: 'Courier New', monospace;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
+.card-link:hover { color: #a777ff; }
 
-.types {
-  gap: 6px;
-  display: flex;
-  flex-wrap: wrap;
+.footer-credit {
+  text-align: center;
+  padding: 20px 0 40px;
+  font-size: 0.72rem;
+  color: #aaa;
 }
-
-.project-type {
-  background: #b2b2fd;
-  color: #1a41cd;
-  font-weight: bold;
-  padding: 0.3em 0.7em;
-  border-radius: 15px;
-  font-size: 11px;
-  letter-spacing: -0.3px;
-}
-
-.project-hover {
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  padding: 7px;
-  transition: all 0.3s ease;
-  background-color: #dce8f8;
-  flex-shrink: 0;
-}
-
-.project-desc {
-  font-size: 0.75rem;
-  color: #555;
-  line-height: 1.6;
-}
+.footer-credit a { color: #aaa; text-decoration: underline; text-underline-offset: 2px; }
+.footer-credit a:hover { color: #555; }
 </style>
 </head>
 <body>
@@ -136,78 +146,104 @@ header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
 
   <div class="cards-grid">
 
-    <a class="article-wrapper" href="https://s-najiihah.github.io/project">
-      <div class="container-project">🌍</div>
-      <div class="project-info">
-        <div class="flex-pr">
-          <div class="project-title">Plastic Waste Trade</div>
-          <svg class="project-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1a41cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
+    <!-- Card 1: Plastic Waste Trade -->
+    <div class="card" onclick="window.open('https://s-najiihah.github.io/project','_blank')">
+      <div class="top">
+        <span class="title">plastic_waste.py</span>
+        <div>
+          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
+          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
+          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
         </div>
-        <div class="types">
-          <span class="project-type">Data Viz</span>
-          <span class="project-type">PP434</span>
-          <span class="project-type">LSE</span>
-        </div>
-        <p class="project-desc">Developed for PP434 at LSE. An interactive data visualisation exploring global plastic waste trade flows and what they reveal about international environmental policy.</p>
       </div>
-    </a>
+      <hr>
+      <div class="content">
+        <span class="c1">import</span> <span class="c2">plotly</span><br>
+        <span class="comment"># PP434 · LSE</span><br>
+        <span class="c3">title</span> = <span class="c4">"Plastic Waste<br>&nbsp;&nbsp;&nbsp;Trade"</span><br><br>
+        <span class="comment"># Interactive data viz</span><br>
+        <span class="comment"># exploring global plastic</span><br>
+        <span class="comment"># waste trade flows</span>
+      </div>
+      <hr>
+      <a class="card-link" href="https://s-najiihah.github.io/project" target="_blank">→ view project</a>
+    </div>
 
-    <a class="article-wrapper" href="https://s-najiihah.github.io/portfolio">
-      <div class="container-project">📊</div>
-      <div class="project-info">
-        <div class="flex-pr">
-          <div class="project-title">Portfolio</div>
-          <svg class="project-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1a41cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
+    <!-- Card 2: Portfolio -->
+    <div class="card" onclick="window.open('https://s-najiihah.github.io/portfolio','_blank')">
+      <div class="top">
+        <span class="title">portfolio.py</span>
+        <div>
+          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
+          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
+          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
         </div>
-        <div class="types">
-          <span class="project-type">Data Viz</span>
-          <span class="project-type">PP434</span>
-          <span class="project-type">LSE</span>
-        </div>
-        <p class="project-desc">Developed for PP434 at LSE. A collection of data visualisation exercises covering hosting, scraping, maps, big data, and interactive visualisations.</p>
       </div>
-    </a>
+      <hr>
+      <div class="content">
+        <span class="c1">import</span> <span class="c2">vega_altair</span><br>
+        <span class="comment"># PP434 · LSE</span><br>
+        <span class="c3">title</span> = <span class="c4">"Data Viz<br>&nbsp;&nbsp;&nbsp;Exercises"</span><br><br>
+        <span class="comment"># Scraping, maps,</span><br>
+        <span class="comment"># big data &amp; interactive</span><br>
+        <span class="comment"># visualisations</span>
+      </div>
+      <hr>
+      <a class="card-link" href="https://s-najiihah.github.io/portfolio" target="_blank">→ view project</a>
+    </div>
 
-    <a class="article-wrapper" href="https://s-najiihah.github.io/computing-in-context">
-      <div class="container-project">🏙️</div>
-      <div class="project-info">
-        <div class="flex-pr">
-          <div class="project-title">Computing in Context</div>
-          <svg class="project-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1a41cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
+    <!-- Card 3: Computing in Context -->
+    <div class="card" onclick="window.open('https://s-najiihah.github.io/computing-in-context','_blank')">
+      <div class="top">
+        <span class="title">nyc_buildings.py</span>
+        <div>
+          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
+          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
+          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
         </div>
-        <div class="types">
-          <span class="project-type">Python</span>
-          <span class="project-type">Columbia</span>
-        </div>
-        <p class="project-desc">Data analysis projects from Advanced Computing in Context (Spring 2025) at Columbia, including a Streamlit dashboard on NYC buildings and an obesity analysis.</p>
       </div>
-    </a>
+      <hr>
+      <div class="content">
+        <span class="c1">import</span> <span class="c2">streamlit</span><br>
+        <span class="comment"># Columbia · Spring 2025</span><br>
+        <span class="c3">title</span> = <span class="c4">"Computing in<br>&nbsp;&nbsp;&nbsp;Context"</span><br><br>
+        <span class="comment"># NYC building permits,</span><br>
+        <span class="comment"># evictions &amp; complaints</span><br>
+        <span class="comment"># dashboard</span>
+      </div>
+      <hr>
+      <a class="card-link" href="https://s-najiihah.github.io/computing-in-context" target="_blank">→ view project</a>
+    </div>
 
-    <a class="article-wrapper" href="https://s-najiihah.github.io/computing-in-context/project_3.html">
-      <div class="container-project">🍔</div>
-      <div class="project-info">
-        <div class="flex-pr">
-          <div class="project-title">McDonald's &amp; Obesity</div>
-          <svg class="project-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1a41cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
+    <!-- Card 4: McDonald's & Obesity -->
+    <div class="card" onclick="window.open('https://s-najiihah.github.io/computing-in-context/project_3.html','_blank')">
+      <div class="top">
+        <span class="title">mcdonalds_obesity.py</span>
+        <div>
+          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
+          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
+          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
         </div>
-        <div class="types">
-          <span class="project-type">Python</span>
-          <span class="project-type">Plotly</span>
-          <span class="project-type">Columbia</span>
-        </div>
-        <p class="project-desc">Exploring the relationship between McDonald's locations and adult obesity rates across 90+ countries, visualised as an interactive choropleth map.</p>
       </div>
-    </a>
+      <hr>
+      <div class="content">
+        <span class="c1">import</span> <span class="c2">plotly.express</span><br>
+        <span class="comment"># Columbia · Python</span><br>
+        <span class="c3">title</span> = <span class="c4">"McDonald's &amp;<br>&nbsp;&nbsp;&nbsp;Obesity"</span><br><br>
+        <span class="comment"># Choropleth map across</span><br>
+        <span class="comment"># 90+ countries exploring</span><br>
+        <span class="comment"># obesity correlation</span>
+      </div>
+      <hr>
+      <a class="card-link" href="https://s-najiihah.github.io/computing-in-context/project_3.html" target="_blank">→ view project</a>
+    </div>
 
   </div>
+
+  <div class="footer-credit">
+    Card design via <a href="https://uiverse.io/" target="_blank">uiverse.io</a>
+  </div>
+
 </div>
 
 </body>
