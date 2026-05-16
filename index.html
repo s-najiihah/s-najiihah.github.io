@@ -4,24 +4,73 @@
 <title>Najiihah Ahmad</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Inter", sans-serif; font-weight: 300; background-color: white; color: #000; }
-a { text-decoration: none; color: inherit; }
 
-.page { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-header { text-align: center; padding: 100px 0 70px; }
-header h1 { font-size: 2.5rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 1rem; }
-header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  color: #000;
+}
 
-.icons { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.2rem; }
-.icons a { font-size: 1.3rem; color: #000; }
-.icons a:hover { color: #555; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 100px 0 70px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 0.85rem;
+  color: #000;
+  line-height: 1.7;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.icons a {
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.icons a:hover {
+  color: #555;
+}
 
 .cards-grid {
   display: flex;
@@ -31,10 +80,11 @@ header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
   padding-bottom: 60px;
 }
 
-/* Card styles from uiverse.io */
+/* Card styles */
+
 .card {
   width: 250px;
-  height: 254px;
+  min-height: 340px;
   background: #121212;
   border-radius: 10px;
   border: 1px #212121 solid;
@@ -43,39 +93,49 @@ header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
   display: flex;
   flex-direction: column;
 }
+
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
+
 .card hr {
   border: none;
   border-top: 1px solid #313131;
   margin: 0;
 }
+
 .content {
   color: #8e8e8e;
   margin-left: 0.3em;
   font-family: 'Courier New', monospace;
   font-size: 0.72rem;
   line-height: 1.7;
-  padding: 8px 10px;
+  padding: 10px;
   flex: 1;
+  white-space: normal;
 }
+
 .c1 { color: rgb(55, 91, 158); }
 .c2 { color: rgb(55, 158, 150); }
 .c3 { color: rgb(158, 151, 55); }
 .c4 { color: rgb(88, 158, 55); }
-.comment { opacity: 50%; }
+
+.comment {
+  opacity: 50%;
+}
+
 .title {
   color: #e8e8e8;
   font-size: small;
-  float: left;
   margin-left: 0.6em;
   margin-top: 0.6em;
   font-family: 'Courier New', monospace;
 }
+
 .top {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 21px;
   font-weight: 450;
   background-color: #121212;
@@ -86,12 +146,7 @@ header p { font-size: 0.85rem; color: #000; line-height: 1.7; }
   align-items: center;
   justify-content: space-between;
 }
-.topfix {
-  background-color: #121212;
-  width: 100%;
-  height: 1em;
-  margin-top: -1em;
-}
+
 button {
   width: 40px;
   height: 35px;
@@ -102,13 +157,23 @@ button {
   transition: 0.2s;
   cursor: pointer;
 }
+
 button svg path,
 button svg rect,
-button svg polygon { fill: #ffffff; }
-button svg { width: 10px; height: 10px; }
-.close:hover { background-color: #ffffff10; }
-.maximize:hover { background-color: #ffffff10; }
-.minimize:hover { background-color: #ffffff10; }
+button svg polygon {
+  fill: #ffffff;
+}
+
+button svg {
+  width: 10px;
+  height: 10px;
+}
+
+.close:hover,
+.maximize:hover,
+.minimize:hover {
+  background-color: #ffffff10;
+}
 
 .card-link {
   display: block;
@@ -119,7 +184,10 @@ button svg { width: 10px; height: 10px; }
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.card-link:hover { color: #a777ff; }
+
+.card-link:hover {
+  color: #a777ff;
+}
 
 .footer-credit {
   text-align: center;
@@ -127,119 +195,338 @@ button svg { width: 10px; height: 10px; }
   font-size: 0.72rem;
   color: #aaa;
 }
-.footer-credit a { color: #aaa; text-decoration: underline; text-underline-offset: 2px; }
-.footer-credit a:hover { color: #555; }
+
+.footer-credit a {
+  color: #aaa;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-credit a:hover {
+  color: #555;
+}
+
 </style>
 </head>
+
 <body>
 
 <div class="page">
 
   <header>
     <h1>Najiihah Ahmad</h1>
-    <p>Public policy professional and MPA candidate at LSE &amp; Columbia,<br>specialising in data science and technology policy.</p>
+
+    <p>
+      Public policy professional and MPA candidate at LSE &amp; Columbia,<br>
+      specialising in data science and technology policy.
+    </p>
+
     <div class="icons">
-      <a href="https://www.linkedin.com/in/najiihah-ahmad/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/s-najiihah/" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/najiihah-ahmad/" target="_blank" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/s-najiihah/" target="_blank" title="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
     </div>
   </header>
 
   <div class="cards-grid">
 
-    <!-- Card 1: Plastic Waste Trade -->
-    <div class="card" onclick="window.open('https://s-najiihah.github.io/project','_blank')">
+    <!-- Card 1 -->
+
+    <div class="card"
+      onclick="window.open('https://s-najiihah.github.io/project','_blank')">
+
       <div class="top">
         <span class="title">plastic_waste.py</span>
+
         <div>
-          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
-          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
-          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
+          <button class="minimize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="4.5" width="10" height="1"/>
+            </svg>
+          </button>
+
+          <button class="maximize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="0" width="10" height="10"
+                fill="none" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg viewBox="0 0 10 10">
+              <polygon points="0,0 10,10"/>
+              <polygon points="10,0 0,10"/>
+            </svg>
+          </button>
         </div>
       </div>
+
       <hr>
+
       <div class="content">
-        <span class="c1">import</span> <span class="c2">plotly</span><br>
-        <span class="c3">title</span> = <span class="c4">"Plastic Waste<br>&nbsp;&nbsp;&nbsp;Trade"</span><br><br>
-        <span class="c3">description</span> = <span class="c4">"An interactive data visualisation exploring global plastic waste trade flows, examining which countries export and import the most plastic waste and what that reveals about international environmental policy."</span><br><br>
+
+        <span class="c1">import</span>
+        <span class="c2">plotly</span>
+
+        <br><br>
+
+        <span class="c3">title</span> =
+        <span class="c4">
+          "Plastic Waste<br>
+          &nbsp;&nbsp;&nbsp;Trade"
+        </span>
+
+        <br><br>
+
+        <span class="c3">description</span> =
+        <span class="c4">
+          "An interactive data visualisation exploring global plastic
+          waste trade flows and international environmental policy."
+        </span>
+
+        <br><br>
+
         <span class="comment"># Interactive data viz</span><br>
         <span class="comment"># exploring global plastic</span><br>
         <span class="comment"># waste trade flows</span>
+
       </div>
+
       <hr>
-      <a class="card-link" href="https://s-najiihah.github.io/project" target="_blank">→ view project</a>
+
+      <a class="card-link"
+        href="https://s-najiihah.github.io/project"
+        target="_blank">
+        → view project
+      </a>
+
     </div>
 
-    <!-- Card 2: Portfolio -->
-    <div class="card" onclick="window.open('https://s-najiihah.github.io/portfolio','_blank')">
+    <!-- Card 2 -->
+
+    <div class="card"
+      onclick="window.open('https://s-najiihah.github.io/portfolio','_blank')">
+
       <div class="top">
         <span class="title">portfolio.py</span>
+
         <div>
-          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
-          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
-          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
+          <button class="minimize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="4.5" width="10" height="1"/>
+            </svg>
+          </button>
+
+          <button class="maximize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="0" width="10" height="10"
+                fill="none" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg viewBox="0 0 10 10">
+              <polygon points="0,0 10,10"/>
+              <polygon points="10,0 0,10"/>
+            </svg>
+          </button>
         </div>
       </div>
+
       <hr>
+
       <div class="content">
-        <span class="c1">import</span> <span class="c2">vega_altair</span><br>
-        <span class="c3">title</span> = <span class="c4">"Data Viz<br>&nbsp;&nbsp;&nbsp;Exercises"</span><br><br>
+
+        <span class="c1">import</span>
+        <span class="c2">vega_altair</span>
+
+        <br><br>
+
+        <span class="c3">title</span> =
+        <span class="c4">
+          "Data Viz<br>
+          &nbsp;&nbsp;&nbsp;Exercises"
+        </span>
+
+        <br><br>
+
+        <span class="c3">description</span> =
+        <span class="c4">
+          "A collection of visualisation exercises exploring
+          charts, maps, scraping, big data and interactivity."
+        </span>
+
+        <br><br>
+
         <span class="comment"># Scraping, maps,</span><br>
         <span class="comment"># big data &amp; interactive</span><br>
         <span class="comment"># visualisations</span>
+
       </div>
+
       <hr>
-      <a class="card-link" href="https://s-najiihah.github.io/portfolio" target="_blank">→ view project</a>
+
+      <a class="card-link"
+        href="https://s-najiihah.github.io/portfolio"
+        target="_blank">
+        → view project
+      </a>
+
     </div>
 
-    <!-- Card 3: Computing in Context -->
-    <div class="card" onclick="window.open('https://s-najiihah.github.io/computing-in-context','_blank')">
+    <!-- Card 3 -->
+
+    <div class="card"
+      onclick="window.open('https://s-najiihah.github.io/computing-in-context','_blank')">
+
       <div class="top">
         <span class="title">nyc_buildings.py</span>
+
         <div>
-          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
-          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
-          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
+          <button class="minimize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="4.5" width="10" height="1"/>
+            </svg>
+          </button>
+
+          <button class="maximize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="0" width="10" height="10"
+                fill="none" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg viewBox="0 0 10 10">
+              <polygon points="0,0 10,10"/>
+              <polygon points="10,0 0,10"/>
+            </svg>
+          </button>
         </div>
       </div>
+
       <hr>
+
       <div class="content">
-        <span class="c1">import</span> <span class="c2">streamlit</span><br>
-        <span class="comment"># Columbia · Spring 2025</span><br>
-        <span class="c3">title</span> = <span class="c4">"Computing in<br>&nbsp;&nbsp;&nbsp;Context"</span><br><br>
+
+        <span class="c1">import</span>
+        <span class="c2">streamlit</span>
+
+        <br><br>
+
+        <span class="c3">title</span> =
+        <span class="c4">
+          "Computing in<br>
+          &nbsp;&nbsp;&nbsp;Context"
+        </span>
+
+        <br><br>
+
+        <span class="c3">description</span> =
+        <span class="c4">
+          "Projects from Columbia exploring NYC building permits,
+          evictions, complaints and urban data dashboards."
+        </span>
+
+        <br><br>
+
         <span class="comment"># NYC building permits,</span><br>
         <span class="comment"># evictions &amp; complaints</span><br>
         <span class="comment"># dashboard</span>
+
       </div>
+
       <hr>
-      <a class="card-link" href="https://s-najiihah.github.io/computing-in-context" target="_blank">→ view project</a>
+
+      <a class="card-link"
+        href="https://s-najiihah.github.io/computing-in-context"
+        target="_blank">
+        → view project
+      </a>
+
     </div>
 
-    <!-- Card 4: McDonald's & Obesity -->
-    <div class="card" onclick="window.open('https://s-najiihah.github.io/computing-in-context/project_3.html','_blank')">
+    <!-- Card 4 -->
+
+    <div class="card"
+      onclick="window.open('https://s-najiihah.github.io/computing-in-context/project_3.html','_blank')">
+
       <div class="top">
         <span class="title">mcdonalds_obesity.py</span>
+
         <div>
-          <button class="minimize"><svg viewBox="0 0 10 10"><rect x="0" y="4.5" width="10" height="1"/></svg></button>
-          <button class="maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" fill="none" stroke="white" stroke-width="1.5"/></svg></button>
-          <button class="close"><svg viewBox="0 0 10 10"><polygon points="0,0 10,10"/><polygon points="10,0 0,10"/></svg></button>
+          <button class="minimize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="4.5" width="10" height="1"/>
+            </svg>
+          </button>
+
+          <button class="maximize">
+            <svg viewBox="0 0 10 10">
+              <rect x="0" y="0" width="10" height="10"
+                fill="none" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg viewBox="0 0 10 10">
+              <polygon points="0,0 10,10"/>
+              <polygon points="10,0 0,10"/>
+            </svg>
+          </button>
         </div>
       </div>
+
       <hr>
+
       <div class="content">
-        <span class="c1">import</span> <span class="c2">plotly.express</span><br>
-        <span class="c3">title</span> = <span class="c4">"McDonald's &amp;<br>&nbsp;&nbsp;&nbsp;Obesity"</span><br><br>
+
+        <span class="c1">import</span>
+        <span class="c2">plotly.express</span>
+
+        <br><br>
+
+        <span class="c3">title</span> =
+        <span class="c4">
+          "McDonald's &amp;<br>
+          &nbsp;&nbsp;&nbsp;Obesity"
+        </span>
+
+        <br><br>
+
+        <span class="c3">description</span> =
+        <span class="c4">
+          "A choropleth map across 90+ countries exploring
+          obesity rates and McDonald's distribution."
+        </span>
+
+        <br><br>
+
         <span class="comment"># Choropleth map across</span><br>
         <span class="comment"># 90+ countries exploring</span><br>
         <span class="comment"># obesity correlation</span>
+
       </div>
+
       <hr>
-      <a class="card-link" href="https://s-najiihah.github.io/computing-in-context/project_3.html" target="_blank">→ view project</a>
+
+      <a class="card-link"
+        href="https://s-najiihah.github.io/computing-in-context/project_3.html"
+        target="_blank">
+        → view project
+      </a>
+
     </div>
 
   </div>
 
   <div class="footer-credit">
-    Card design via <a href="https://uiverse.io/" target="_blank">uiverse.io</a>
+    Card design via
+    <a href="https://uiverse.io/" target="_blank">uiverse.io</a>
   </div>
 
 </div>
